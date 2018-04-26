@@ -1,0 +1,41 @@
+<!-- <div class="container"> -->
+		<!--<form (submit)="loginUser($event)"> 
+	<form class="form-signin" (ngSubmit)="login()" #loginForm="ngForm"> -->
+			<!-- <form class="form-signin" (ngSubmit)="login()" #loginForm="ngForm">
+		<div class="alert alert-warning alert-dismissible" role="alert" *ngIf="message !== ''">
+		  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		  {{message}}
+		</div>
+		<h2 class="form-signin-heading">Please sign in</h2>
+		<label for="inputEmail" class="sr-only">Email address</label>
+		<input type="email" class="form-control" placeholder="Email address" [(ngModel)]="loginData.username" name="username" id="username" required/>
+		<label for="inputPassword" class="sr-only">Password</label>
+		<input type="password" class="form-control" placeholder="Password" [(ngModel)]="loginData.password" name="password" id="password" required/>
+		<button class="btn btn-lg btn-primary btn-block" type="submit" [disabled]="!loginForm.form.valid">Sign in</button>
+		<p>
+			Not a member? <a [routerLink]="['/signup']">Signup here</a>
+		</p>
+	</form>
+</div>  -->
+<div class="middle-box text-center loginscreen  animated fadeInDown">
+		<div>
+			
+			<h3>Welcome to DSM</h3>
+			<!-- <form class="m-t" role="form" action="#"> -->
+			<form class="form-signin" (ngSubmit)="login()" #loginForm="ngForm">
+				<div class="form-group">
+					<input class="form-control" type="email" class="form-control" placeholder="Email address" [(ngModel)]="loginData.username" name="username" id="username" required="">
+				</div>
+				<div class="form-group">
+					<input type="password" class="form-control" placeholder="Password" [(ngModel)]="loginData.password" name="password" id="password" required="">
+				</div>
+				<button type="submit" class="btn btn-primary block full-width m-b" [disabled]="!loginForm.form.valid">Login</button>
+	
+				<a href="#"><small>Forgot password?</small></a>
+				<p class="text-muted text-center"><small>Do not have an account?</small></p>
+				<a class="btn btn-sm btn-white btn-block" href="#">Create an account</a>
+			</form>
+			<p class="m-t"> <small>DPM SOCIAL MEDIA &copy; 2018-2019</small> </p>
+		</div>
+	</div>
+	
